@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الوجبات</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <h1>مطعم الذوق الرفيع</h1>
+  </header>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="home.html">الرئيسية</a></li>
+      <li><a href="aboutus.html">من نحن</a></li>
+      <li><a href="meals.html">الوجبات</a></li>
+    </ul>
+  </nav>
+
+  <table>
+    <thead>
+      <tr>
+        <th>الرمز</th>
+        <th>الوجبة</th>
+        <th>السعر</th>
+        <th>اظهار التفاصيل</th>
+        <th>اختيار</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>SF_001</td>
+        <td>وجبة سمك مشوي</td>
+        <td class="price">110 ل.س</td>
+        <td>
+          <button type="button">إظهار</button>
+        </td>
+        <td>
+          <input class="meal-checkbox" id="cb1" type="checkbox" />
+
+        </td>
+      </tr>
+      <tr class="details-row hidden">
+        <td colspan="5">
+          <div class="meal-details">
+            <h4>وجبة سمك مشوي</h4>
+            <p>النوع: مطبخ مصري<br>السعر: 110 ل.س</p>
+            <div class="details-box">
+              <img src="images/fish.jpeg" alt="سمك مشوي" />
+              <div>
+                <p>المطبخ: المصري</p>
+                <p>تصنيف الطعام: مأكولات بحرية</p>
+                <p>المكونات:</p>
+                <ul>
+                  <li>4 قطع سمك بوري أحمر، مغسول ومنظف</li>
+                  <li>2 ورقة من الأوريجانو الطازج، مقطعة</li>
+                  <li>1 ملعقة صغيرة من ملح الطعام</li>
+                  <li>1 ملعقة صغيرة من الفلفل الأسود المطحون</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>SF_002</td>
+        <td>بيتزا عائلي</td>
+        <td>70 ل.س</td>
+        <td>
+          <button type="button">إظهار</button>
+        </td>
+        <td>
+
+          <input class="meal-checkbox" id="cb2" type="checkbox" />
+
+        </td>
+      </tr>
+      <tr class="details-row hidden">
+        <td colspan="5">
+          <div class="meal-details">
+            <h4>بيتزا عائلي</h4>
+            <p>النوع: مطبخ إيطالي<br>السعر: 70 ل.س</p>
+            <div class="details-box">
+              <img src="images/piza.jpeg" alt="بيتزا عائلي" />
+              <div>
+                <p>المطبخ: إيطالي</p>
+                <p>تصنيف الطعام: وجبة سريعة</p>
+                <p>المكونات:</p>
+                <ul>
+                  <li>عجينة بيتزا جاهزة</li>
+                  <li>صلصة طماطم</li>
+                  <li>جبنة موزاريلا</li>
+                  <li>فلفل رومي وطماطم مقطعة</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>SF_003</td>
+        <td>دجاج مشوي</td>
+        <td>95 ل.س</td>
+        <td>
+          <button type="button">إظهار</button>
+        </td>
+        <td>
+          <input class="meal-checkbox" id="cb3" type="checkbox" />
+        </td>
+      </tr>
+      <tr class="details-row hidden">
+        <td colspan="5">
+          <div class="meal-details">
+            <h4>دجاج مشوي</h4>
+            <p>النوع: مطبخ غربي<br>السعر: 95 ل.س</p>
+            <div class="details-box">
+              <img src="images/chiken.jpeg" alt="دجاج مشوي" />
+              <div>
+                <p>المطبخ: أمريكي</p>
+                <p>تصنيف الطعام: لحوم مشوية</p>
+                <p>المكونات:</p>
+                <ul>
+                  <li>دجاج طازج مقطع أنصاف</li>
+                  <li>ثوم وزيت زيتون</li>
+                  <li>ليمون وملح وفلفل</li>
+                  <li>عشبة الروزماري الطازجة</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>SF_004</td>
+        <td>شريحة لحم مشوية</td>
+        <td>120 ل.س</td>
+        <td>
+          <button type="button">إظهار</button>
+        </td>
+        <td>
+          <input class="meal-checkbox" id="cb4" type="checkbox" />
+        </td>
+      </tr>
+      <tr class="details-row hidden">
+        <td colspan="5">
+          <div class="meal-details">
+            <h4>شريحة لحم مشوية</h4>
+            <p>النوع: مطبخ غربي<br>السعر: 120 ل.س</p>
+            <div class="details-box">
+              <img src="images/stick.jpeg" alt="شريحة لحم" />
+              <div>
+                <p>المطبخ: أمريكي</p>
+                <p>تصنيف الطعام: لحم بقري</p>
+                <p>المكونات:</p>
+                <ul>
+                  <li>لحم بقري ستيك عالي الجودة</li>
+                  <li>ملح بحري وفلفل أسود</li>
+                  <li>زبدة الثوم</li>
+                  <li>عشبة الزعتر الطازج</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>SF_005</td>
+        <td>سمك سلمون مشوي</td>
+        <td>130 ل.س</td>
+        <td>
+          <button type="button">إظهار</button>
+        </td>
+        <td>
+          <input class="meal-checkbox" id="cb5" type="checkbox" />
+        </td>
+      </tr>
+      <tr class="details-row hidden">
+        <td colspan="5">
+          <div class="meal-details">
+            <h4>سمك سلمون مشوي</h4>
+            <p>النوع: مطبخ غربي<br>السعر: 130 ل.س</p>
+            <div class="details-box">
+              <img src="images/salmon_fish.jpeg" alt="سمك سلمون" />
+              <div>
+                <p>المطبخ: إسكندنافي</p>
+                <p>تصنيف الطعام: أسماك دهنية</p>
+                <p>المكونات:</p>
+                <ul>
+                  <li>سمك سلمون طازج فيليه</li>
+                  <li>زيت زيتون وليمون</li>
+                  <li>ملح وفلفل وديل</li>
+                  <li>أعشاب بحرية وشبت طازج</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="actions">
+    <button id="continueBtn" type="button">متابعة الطلب</button>
+  </div>
+
+  <section id="orderSection" class="order-section hidden">
+    <h3>نموذج الطلب</h3>
+    <form id="orderForm">
+      <input type="text" id="name" placeholder="الاسم الكامل" />
+      <div class="error" id="nameError"></div>
+
+      <input type="text" id="nationalId" placeholder="الرقم الوطني" />
+      <div class="error" id="idError"></div>
+
+      <input type="text" id="birthdate" placeholder="تاريخ الولادة dd-mm-yyyy" />
+      <div class="error" id="dateError"></div>
+
+      <input type="text" id="phone" placeholder="رقم الموبايل" />
+      <div class="error" id="phoneError"></div>
+
+      <input type="text" id="email" placeholder="الإيميل" />
+      <div class="error" id="emailError"></div>
+
+      <button type="submit">إرسال الطلب</button>
+    </form>
+  </section>
+
+  <div id="bill" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeBill" class="close-btn">×</button>
+      <div>
+        <h2>فاتورة الطلب</h2>
+        <hr>
+        <div>
+          <p><strong>الاسم:</strong> <span id="billName"></span></p>
+          <p><strong>الرقم الوطني:</strong> <span id="billId"></span></p>
+          <p><strong>تاريخ الطلب:</strong> <span id="billDate"></span></p>
+        </div>
+        <hr>
+        <h3>بيان الوجبات</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>الوجبة</th>
+              <th>السعر</th>
+            </tr>
+          </thead>
+          <tbody id="billDetails"></tbody>
+        </table>
+        <hr>
+        <div>
+          <p><strong>المجموع الفرعي: <span id="billSubtotal"></span> ل.س</strong></p>
+          <p><strong>ضريبة القيمة المضافة (5%): <span id="billVat"></span> ل.س</strong></p>
+          <hr style="border-top: 1px dashed #aaa; margin: 6px 0;">
+          <p style="font-size: 1.1em;"><strong>الإجمالي بعد الضريبة: <span id="billTotal"></span> ل.س</strong></p>
+        </div>
+        <p>شكرا لطلبكم!</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 مطعم الذوق الرفيع</p>
+  </footer>
+  <script src="myFunctions.js"></script>
+</body>
+
+</html>
